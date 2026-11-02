@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="supabase-url" content="SUPABASE_URL_PLACEHOLDER" />
+    <link rel="canonical" href="https://insuranceclaimresponsepro.com/estimate-review">
+<meta name="supabase-url" content="SUPABASE_URL_PLACEHOLDER" />
   <meta name="supabase-anon-key" content="SUPABASE_ANON_KEY_PLACEHOLDER" />
   <title>Insurance Claim Defense</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
@@ -226,9 +227,9 @@
     <div class="brand">Insurance Claim Defense</div>
     <div id="topNavLinks">
       <a href="/">Home</a>
-      <a href="/pricing.html">Pricing</a>
-      <a href="/login.html">Sign in</a>
-      <a href="/claim-defense.html" data-wizard-purchase>Purchase access</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/login">Sign in</a>
+      <a href="/estimate-review" data-wizard-purchase>Purchase access</a>
     </div>
   </nav>
 
@@ -242,7 +243,7 @@
 
     <div id="authBanner" class="auth-banner" style="display:none;">
       Sign in to use the analyzer with your account. Configure Supabase URL and anon key meta tags on this host.
-      <a href="/login.html">Sign in</a>
+      <a href="/login">Sign in</a>
     </div>
 
     <!-- Step 1 -->
@@ -771,13 +772,13 @@ Phone: 1-800-555-0100`;
       if (!container) return;
       const locked = state.previewMode === true;
       const signedIn = !!state.accessToken;
-      let html = '<a href="/">Home</a><a href="/pricing.html">Pricing</a>';
+      let html = '<a href="/">Home</a><a href="/pricing">Pricing</a>';
       if (signedIn) {
         html += '<a href="/dashboard">Dashboard</a>';
       } else {
-        html += '<a href="/login.html">Sign in</a>';
+        html += '<a href="/login">Sign in</a>';
         if (locked) {
-          html += '<a href="/claim-defense.html" data-wizard-purchase>Purchase access</a>';
+          html += '<a href="/estimate-review" data-wizard-purchase>Purchase access</a>';
         }
       }
       container.innerHTML = html;

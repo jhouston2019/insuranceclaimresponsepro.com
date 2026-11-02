@@ -39,3 +39,9 @@
   for = "/*.css"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+  from = "https://www.insuranceclaimresponsepro.com/*"
+  to = "https://insuranceclaimresponsepro.com/:splat"
+  status = 301
+  force = true
